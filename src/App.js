@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState, useEffect } from 'react'
+import LanguageSwitch from './components/languageSwitch/LanguageSwitch'
+import { formData, cardData } from './data/data'
+import Mail from './components/form/mail'
 
 function App() {
+  const [languageState, setLanguageState] = useState('FR')
+  let formDataBasedOnState = languageState === 'FR' ? formData[0] : formData[1];
+  
+  useEffect(() => {
+    console.log(languageState)
+    formDataBasedOnState = languageState === 'FR' ? formData[0] : formData[1];
+  }, [languageState])
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LanguageSwitch onChange={val => setLanguageState(val)}/>
+      <Mail data={formDataBasedOnState}/>
     </div>
   );
 }

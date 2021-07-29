@@ -1,0 +1,25 @@
+.languageContainer {
+  width: 95px;
+  height: 42px;
+  font-size: 16px;
+  font-family: "merriweather";
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.languageContainer button {
+  all: unset;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+button.lanIsSelected {
+  font-weight: bold;
+  color: #1d1d18;
+}
+
+button.lanIsNotSelected {
+  font-weight: bold;
+  color: #1d1d18;
+  opacity: 0.5;
+}
