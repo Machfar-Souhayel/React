@@ -23,6 +23,9 @@ import CatalogueMenu from './../../components/catalogueMenu/CatalogueMenu';
 import Card from './../../components/card/Card';
 import ScrollButton from './../../components/scrollButton/ScrollButton'
 
+const chooseLanguage = (language, form) => {
+    return language === "FR" ? form[0] : form[1];
+};
 function Dashboard() {
     const [languageState, setLanguageState] = useState('FR')
     // Setting up state for all component data as props
@@ -36,13 +39,13 @@ function Dashboard() {
 
     // The useEffect hook will be called only when setLanguageState method is called
     useEffect(() => {
-    setFormDataBasedOnState(languageState === 'FR' ? formData[0] : formData[1]);
-    setArticleDataBasedOnState(languageState === 'FR' ? articleData[0] : articleData[1])
-    setFooterDataBasedOnState(languageState === 'FR' ? footerData[0] : footerData[1])
-    setRatedCardDataBasedOnState(languageState === 'FR' ? ratedCardData[0] : ratedCardData[1])
-    setExpertiseListDataBasedOnState(languageState === 'FR' ? expertiseListData[0] : expertiseListData[1])
-    setCatalogueMenuDataBasedOnState(languageState === 'FR' ? catalogueMenuData[0] : catalogueMenuData[1])
-    setScrollDownDataBasedOnState(languageState === 'FR' ? scrollDownData[0] : scrollDownData[1])
+    setFormDataBasedOnState(chooseLanguage(languageState, formData));
+    setArticleDataBasedOnState(chooseLanguage(languageState, articleData))
+    setFooterDataBasedOnState(chooseLanguage(languageState, footerData))
+    setRatedCardDataBasedOnState(chooseLanguage(languageState, ratedCardData))
+    setExpertiseListDataBasedOnState(chooseLanguage(languageState, expertiseListData))
+    setCatalogueMenuDataBasedOnState(chooseLanguage(languageState, catalogueMenuData))
+    setScrollDownDataBasedOnState(chooseLanguage(languageState, scrollDownData))
     }, [languageState])
     return (
         <React.Fragment>
