@@ -1,0 +1,57 @@
+/* Header Styles */
+img[alt="showcaseImg"] {
+  position: absolute;
+  top: -3px;
+  right: 0;
+  z-index: -10;
+}
+
+figure img[alt="logo"] {
+  margin: 0;
+  width: 68px;
+  height: 75px;
+}
+figcaption {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+header {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Showcase section styles */
+section.showcaseSection {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section.showcaseSection > * {
+  margin: 20px 0;
+}
+
+/* Cards section styles */
+section.cardSection {
+  max-width: 1400px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-self: center;
+}
+
+/* Form */
+Form {
+  margin: 0 auto;
+}
+
+/* Footer */
+Footer {
+  max-width: 1400px;
+  margin: 0 auto;
+}

@@ -5,7 +5,6 @@
   font-family: "merriweather";
   display: flex;
   justify-content: space-around;
-  align-self: center;
 }
 
 .languageContainer button {

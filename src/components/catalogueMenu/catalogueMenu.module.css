@@ -1,0 +1,24 @@
+.catalogueMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalogueMenu button {
+  font-family: merriweather;
+  font-size: 24px;
+  font-weight: bold;
+  max-width: 300px;
+  min-height: 55px;
+  padding: 0 15px;
+  background-color: #fff;
+  border: 2px solid #1f1f1f;
+  opacity: 41%;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.catalogueMenu button.isSelected {
+  background-color: #ad976e;
+  opacity: 80%;
+}

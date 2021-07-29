@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import styles from './mail.module.css'
+import styles from './form.module.css'
 
 
 const templateParams = {
@@ -12,12 +12,13 @@ const templateParams = {
     from_email: ''
 };
 
-export default function ContactUs(props) {
+export default function ContactUs({data}) {
   const [isSent, setIsSent] = useState(false);
-  const [formContent, setFormContent] = useState(props.data);
+  const [formContent, setFormContent] = useState(data);
+  
   useEffect(() => {
-    setFormContent(props.data)
-  }, [props.data])
+    setFormContent(data)
+  }, [data])
   
   const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
   const formik = useFormik({

@@ -1,50 +1,51 @@
 /* Wrapper styles */
 .formContainer {
-  width: 388px;
+  max-width: 388px;
   height: auto;
   text-align: left;
   border: 1px solid black;
   padding: 15px 10px;
+  margin: 0 auto;
 }
 
 /* Content styles */
-h1 {
+.formContainer h1 {
   font-family: "Merriweather";
   font-size: 20px;
   margin: 10px 0;
 }
-p {
+.formContainer p {
   font-family: "Source Sans Pro";
   font-size: 16px;
   color: #1d1d1b;
   opacity: 0.7;
 }
-ul {
+.formContainer ul {
   font-family: "Source Sans Pro";
   font-size: 16px;
   list-style-type: none;
   opacity: 0.7;
 }
 /* Form styles */
-.contactForm {
+.formContainer .contactForm {
   padding: 12px 10px;
 }
-.formGroup {
+.formContainer .formGroup {
   display: flex;
   flex-direction: column;
   margin: 10px 0;
 }
-.inputGroup {
+.formContainer .inputGroup {
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
 }
-label {
+.formContainer label {
   font-family: "Source Sans Pro";
   font-size: 14px;
   color: #1d1d1b;
 }
-input {
+.formContainer input {
   width: 168px;
   height: 40px;
   padding: 0px 5px;
@@ -52,12 +53,12 @@ input {
   border-radius: 5px;
   background-color: #f6f7f9;
 }
-input[type="email"],
-input[type="tel"] {
+.formContainer input[type="email"],
+.formContainer input[type="tel"] {
   width: 348px;
   height: 40px;
 }
-button {
+.formContainer button {
   width: 140px;
   height: 40px;
   background-color: #1d1d1b;
@@ -66,15 +67,15 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
-button[disabled] {
+.formContainer button[disabled] {
   opacity: 0.5;
 }
-.errorMessage {
+.formContainer .errorMessage {
   font-family: "Source Sans Pro";
   font-size: 16px;
   color: #ce545a;
 }
-.successMessage {
+.formContainer .successMessage {
   font-family: "Source Sans Pro";
   font-size: 16px;
   color: #6ae675;
@@ -84,14 +85,14 @@ button[disabled] {
     instead of next to each other 
 */
 @media screen and (max-width: 576px) {
-  .formContainer {
+  .formContainer .formContainer {
     width: 100%;
     height: auto;
   }
-  .inputGroup {
+  .formContainer .inputGroup {
     flex-direction: column;
   }
-  .contactForm input {
+  .formContainer .contactForm input {
     width: 100%;
   }
 }
