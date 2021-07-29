@@ -22,3 +22,11 @@
   background-color: #ad976e;
   opacity: 80%;
 }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+  .catalogueMenu button {
+    max-width: 200px;
+    font-size: 14px;
+  }
+}

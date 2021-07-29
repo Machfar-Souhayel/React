@@ -55,3 +55,42 @@ Footer {
   max-width: 1400px;
   margin: 0 auto;
 }
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) {
+  img[alt="showcaseImg"] {
+    width: 500px;
+    height: 900px;
+  }
+}
+/*Extra large devices (large desktops, 1060px and up)*/
+@media (max-width: 1060px) {
+  img[alt="showcaseImg"] {
+    width: 400px;
+    height: 900px;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) {
+  img[alt="showcaseImg"] {
+    width: 200px;
+    height: 700px;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+  img[alt="showcaseImg"] {
+    display: none;
+  }
+  section.showcaseSection > * {
+    margin: 20px auto;
+  }
+  section.cardSection > * {
+    margin-bottom: 20px;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+}
