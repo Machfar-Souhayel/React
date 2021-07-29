@@ -66,7 +66,7 @@ function Dashboard() {
                 <Card imgSrc={"/images/imgCard2.png"} cap={"Sunnyside House"}/>
                 <Card imgSrc={"/images/imgCard3.png"} cap={"Springfield House"}/>
             </section>
-            <Form data={formDataBasedOnState}/>            
+            <Form data={formDataBasedOnState} className="floatingForm"/>            
             <Footer data={footerDataBasedOnState}/>
         </React.Fragment>
     )

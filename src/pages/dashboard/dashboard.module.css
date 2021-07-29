@@ -45,11 +45,6 @@ section.cardSection {
   align-self: center;
 }
 
-/* Form */
-Form {
-  margin: 0 auto;
-}
-
 /* Footer */
 Footer {
   max-width: 1400px;
