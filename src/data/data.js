@@ -77,6 +77,33 @@ const scrollDownData = [
     'scroll down'
 ]
 
+const cardsData = [
+    {
+        imgSrc: "/images/imgCard1.png",
+        title: "Old Vicarage",
+        area: '250m²',
+        roomNumber: 2,
+        toiletNumber: 3,
+        liked: true
+    },  
+    {
+        imgSrc: "/images/imgCard2.png",
+        title: "Sunnyside House",
+        area: '280m²',
+        roomNumber: 3,
+        toiletNumber: 4,
+        liked: false
+    }, 
+    {
+        imgSrc: "/images/imgCard3.png",
+        title: "Springfield House",
+        area: '500m²',
+        roomNumber: 2,
+        toiletNumber: 3,
+        liked: true
+    } 
+]
+
 export { 
     formData, 
     articleData, 
@@ -84,5 +111,6 @@ export {
     ratedCardData,
     expertiseListData,
     catalogueMenuData,
-    scrollDownData
+    scrollDownData,
+    cardsData
 };

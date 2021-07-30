@@ -7,9 +7,42 @@
   border: 1px solid 707070;
   overflow: hidden;
 }
+.cardInfo {
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+.cardInfo > div {
+  width: 250px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 .cap {
   font-family: Merriweather;
   font-size: 24px;
   font-weight: bold;
   color: #fff;
+}
+.cardIconContainer {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.customIconStyles {
+  color: #fff;
+  font-size: 30px;
+}
+
+.customHeartStyles {
+  font-size: 40px;
+}
+
+.likedHeart {
+  color: red;
 }

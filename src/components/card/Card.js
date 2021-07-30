@@ -1,13 +1,26 @@
 import React from 'react'
 import styles from './card.module.css'
-
-function Card({imgSrc, cap}) {
+import { AiOutlineHeart } from 'react-icons/ai';
+import {IoIosBed} from 'react-icons/io'
+import {FaToilet} from 'react-icons/fa'
+function Card({data}) {
     return (
         <div className={styles.card}>
-            <img src={imgSrc} alt="related to card" />
+            <img src={data.imgSrc} alt="related to card" />
             <div className={styles.cardInfo}>
-                <h1 className={styles.cap}>{cap}</h1>
-                <img  src="/images/Group 942.png" alt="done" />
+                <div>
+                    <h1 className={styles.cap}>{data.title}</h1>
+                    <div className={styles.cardIconContainer}>
+                        <IoIosBed className={styles.customIconStyles}/>{data.area} |
+                        <IoIosBed className={styles.customIconStyles}/>{data.roomNumber} |
+                        <FaToilet className={styles.customIconStyles}/>{data.toiletNumber}
+                    </div>
+                </div>
+                <AiOutlineHeart className={`
+                    ${styles.customIconStyles} 
+                    ${styles.customHeartStyles} 
+                    ${data.liked ? styles.likedHeart : null}
+                `}/>
             </div>
         </div>
     )

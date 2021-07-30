@@ -9,7 +9,8 @@ import {
   ratedCardData,
   expertiseListData,
   catalogueMenuData,
-  scrollDownData
+  scrollDownData,
+  cardsData
 } from './../../data/data'
 
 // Components
@@ -65,9 +66,9 @@ function Dashboard() {
             </section>
             <CatalogueMenu data={catalogueMenuDataBasedOnState}/>
             <section className={styles.cardSection}>
-                <Card imgSrc={"/images/imgCard1.png"} cap={"Old Vicarage"}/>
-                <Card imgSrc={"/images/imgCard2.png"} cap={"Sunnyside House"}/>
-                <Card imgSrc={"/images/imgCard3.png"} cap={"Springfield House"}/>
+            {
+            cardsData.map(data => <Card data={data}/>)
+            }
             </section>
             <Form data={formDataBasedOnState} className="floatingForm"/>            
             <Footer data={footerDataBasedOnState}/>

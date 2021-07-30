@@ -54,14 +54,14 @@ Footer {
 @media (max-width: 1200px) {
   img[alt="showcaseImg"] {
     width: 500px;
-    height: 900px;
+    height: 800px;
   }
 }
 /*Extra large devices (large desktops, 1060px and up)*/
 @media (max-width: 1060px) {
   img[alt="showcaseImg"] {
     width: 400px;
-    height: 900px;
+    height: 800px;
   }
 }
 
