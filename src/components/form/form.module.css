@@ -97,7 +97,7 @@
 /*Extra large devices (large desktops, 1060px and up)*/
 @media (max-width: 1060px) {
   .formContainer {
-    max-width: 340px;
+    max-width: 400px;
     right: 40px;
   }
 }
